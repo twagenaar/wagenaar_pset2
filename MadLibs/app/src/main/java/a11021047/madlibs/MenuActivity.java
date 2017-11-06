@@ -6,11 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import java.io.BufferedReader;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.concurrent.ThreadLocalRandom;
-import java.util.Random;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -76,9 +72,6 @@ public class MenuActivity extends AppCompatActivity {
             }
         }
         if (v == findViewById(R.id.button_random)) {
-//            int randomNum = ThreadLocalRandom.current().nextInt(0, 5);
-//            Random rand = new Random();
-//            int randomNum = rand.nextInt(5);
             int randomNum = (int) (Math.random() * (4));
             System.out.println(randomNum);
             try {
@@ -99,7 +92,6 @@ public class MenuActivity extends AppCompatActivity {
                         instream = this.getResources().openRawResource(R.raw.madlib4_dance);
                         break;
                 }
-//                instream = this.getResources().openRawResource(R.raw.madlib0_simple);
             }
             catch (Exception e) {
                 findViewById(R.id.button_random).setVisibility(View.GONE);
@@ -111,7 +103,6 @@ public class MenuActivity extends AppCompatActivity {
             story = new Story(instream);
             intent.putExtra("story", story);
             startActivity(intent);
-//            finish();
         }
     }
 
