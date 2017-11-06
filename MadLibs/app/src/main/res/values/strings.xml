@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MadLibs</string>
+    <string name="start">Start!</string>
+    <string name="simple">Simple</string>
+    <string name="tarzan">Tarzan</string>
+    <string name="uni">University</string>
+    <string name="clothes">Clothes</string>
+    <string name="dance">Dance</string>
+    <string name="random">Random</string>
+    <string name="submit">Submit</string>
+    <string name="story">This should show the story…</string>
+    <string name="begin">Welcome to this MadLibs app. This app creates stories by asking for your
+        input for certain words. These words will then be used to complete the story.</string>
+    <string name="menu_text">Please choose one of the following stories. You can also pick random
+        in which case we will pick a random story for you. </string>
+</resources>
